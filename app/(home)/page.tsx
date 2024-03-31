@@ -15,7 +15,7 @@ interface IBookList {
 	updated: string;
 }
 
-export async function getBookLists() {
+async function getBookLists() {
 	const response = await fetch(`${API_URL}/lists`);
 	const json = await response.json();
 	return json;
