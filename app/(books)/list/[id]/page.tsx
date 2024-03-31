@@ -17,7 +17,6 @@ export default async function ListDetailPage({ params: { id } }: IParams) {
 	return (
 		<div className={baskerville.className}>
 			<Suspense fallback={<h3>We are loading book list page...</h3>}>
-				{/* @ts-expect-error Async Server Component */}
 				<BookList id={id} />
 			</Suspense>
 		</div>
