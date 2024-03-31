@@ -38,7 +38,8 @@ export default async function BookList({ id }: { id: string }) {
 						</div>
 						<div className={styles.info}>
 							<h4>{book.title}</h4>
-							<p>{book.author}</p>
+							<p>by {book.author}</p>
+							<p className={styles.description}>{book.description}</p>
 							<a href={book.amazon_product_url} target={"_blank"}>
 								Buy it &rarr;
 							</a>

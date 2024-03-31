@@ -41,6 +41,7 @@
 	position: relative;
 	transition: all 0.2s ease-in-out;
 	filter: grayscale(1);
+	background-color: #f8f9f4;
 }
 .book:hover {
 	transform: scale(1.05);
@@ -73,6 +74,13 @@
 
 .info p {
 	font-size: 0.9rem;
+}
+
+.info .description {
+	text-align: left;
+	margin-top: 5px;
+	font-size: 1rem;
+	line-height: 1.2;
 }
 
 .info a {
