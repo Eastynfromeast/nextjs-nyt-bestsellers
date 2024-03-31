@@ -1,0 +1,31 @@
+.books {
+	display: inline-block;
+}
+
+.books > a {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	position: relative;
+	opacity: 0.9;
+}
+
+.books > a::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	z-index: -1;
+	top: 5px;
+	left: 5px;
+	width: 0;
+	height: 1.2rem;
+	background-color: rgba(234, 255, 0, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+
+.books > a:hover {
+	opacity: 1;
+}
+.books > a:hover::after {
+	width: calc(100% - 20px / 2);
+}

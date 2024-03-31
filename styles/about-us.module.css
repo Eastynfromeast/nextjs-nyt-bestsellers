@@ -1,0 +1,19 @@
+.container {
+	padding: 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container h2 {
+	font-size: 1.8rem;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.container p {
+	font-size: 1rem;
+	line-height: 1.5;
+	min-height: 50vh;
+}

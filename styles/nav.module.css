@@ -1,0 +1,54 @@
+.gnb {
+	width: 100%;
+}
+
+.gnb h1 {
+	font-size: 2.5rem;
+	margin: 25px auto 0;
+	text-align: center;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	width: 80%;
+	padding: 20px 0;
+}
+
+.gnb ul {
+	width: 100%;
+	display: flex;
+	padding: 25px 10px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.gnb ul li {
+	display: inline-block;
+}
+
+.gnb ul li a {
+	display: inline-block;
+	font-size: 1.1rem;
+	padding: 5px;
+	letter-spacing: -0.04rem;
+	position: relative;
+}
+
+.gnb ul li a::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	width: 0;
+	height: 1px;
+	background-color: #222;
+	transition: width 0.2s ease-in-out;
+}
+.gnb ul li a:hover::after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+.index {
+	display: inline-block;
+}

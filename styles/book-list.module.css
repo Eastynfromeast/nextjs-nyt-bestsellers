@@ -1,0 +1,133 @@
+@font-face {
+	font-family: "Libre Baskerville", serif;
+	src: url("../public/fonts/LibreBaskerville-Regular.ttf");
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	padding: 30px 15px;
+	font-family: "Libre Baskerville", serif;
+	max-width: 1440px;
+}
+
+.container h2 {
+	font-size: 1.8rem;
+	text-align: center;
+	margin: 15px auto 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-bottom: 1px solid;
+	padding-bottom: 20px;
+}
+
+.bookshelf {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 20%));
+	gap: 30px;
+	justify-content: center;
+}
+
+.book {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+	border: 1px solid;
+	padding: 10px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+	filter: grayscale(1);
+}
+.book:hover {
+	transform: scale(1.05);
+	filter: grayscale(0);
+}
+
+.cover {
+	width: 100%;
+	overflow: hidden;
+}
+
+.cover img {
+	width: 100%;
+}
+
+.info {
+	margin-top: 10px;
+	padding-top: 20px;
+	border-top: 1px dashed;
+	line-height: 1.5;
+}
+
+.info h4 {
+	font-weight: 600;
+	font-size: 1.1rem;
+	font-style: italic;
+	text-transform: capitalize;
+	margin-bottom: 7px;
+}
+
+.info p {
+	font-size: 0.9rem;
+}
+
+.info a {
+	display: block;
+	margin-top: 20px;
+	padding: 10px 0;
+	border-top: 1px solid;
+	font-weight: 500;
+	opacity: 0.8;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+}
+
+.info a::after {
+	display: inline-block;
+	content: "";
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: rgba(234, 255, 0, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+
+.info a:hover {
+	opacity: 1;
+}
+.info a:hover::after {
+	width: 100%;
+}
+
+.rankFlag {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	background-color: #fa504a;
+	width: 40px;
+	height: 35px;
+	line-height: 45px;
+	color: #fff;
+	display: inline-block;
+	z-index: 1;
+}
+.rankFlag::after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #fa504a;
+	position: absolute;
+	bottom: -19px;
+	left: 0;
+	border-radius: 1px;
+}
