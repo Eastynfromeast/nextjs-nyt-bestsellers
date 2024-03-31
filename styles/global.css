@@ -132,6 +132,10 @@ table {
 	box-sizing: border-box;
 }
 
+html {
+	min-height: 100vh;
+}
+
 body {
 	background: linear-gradient(135deg, #f8f9f4, #e7ded0);
 	color: #26211d;
